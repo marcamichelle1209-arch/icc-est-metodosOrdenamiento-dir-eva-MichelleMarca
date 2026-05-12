@@ -8,7 +8,8 @@ public class App {
         System.out.println("=== Antes de ordenar ===");
         for (Car c : cars) System.out.println(c);
 
-        CarController.sortByName(cars);
+        CarController controller = new CarController();
+        controller.sortByBrand(cars);  // ← cambió de sortByName() a sortByBrand()
 
         System.out.println("\n=== Después de ordenar ===");
         for (Car c : cars) System.out.println(c);
